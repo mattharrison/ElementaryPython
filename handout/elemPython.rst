@@ -48,7 +48,7 @@ Numbers
 
 *Floats* are real numbers
 
->>> miles = 10
+>>> miles = 10.0
 >>> gallons = 3.2
 
 Standard math operators are allowed (``+``, ``-``, ``*``
@@ -58,7 +58,7 @@ Standard math operators are allowed (``+``, ``-``, ``*``
 >>> print miles_per_gallon
 3.125
 
-Transforming variables
+Converting variables
 ----------------------
 
 Turn a string into a number (use ``int`` or ``float``).  Notice that
@@ -108,7 +108,8 @@ Input
 =====
 
 ``raw_input`` allows you to type data in.  Here it will be stored in
-``friend``.
+``friend``.  You might need to convert your variable into a number,
+since the input is returned as a "string".
 
 >>> friend = raw_input("Enter a friend's name")
 
@@ -245,14 +246,17 @@ A simple program
 ================
 
 Type the following into a file named ``name.py`` using a "text editor"::
+  
+  def greeting():
+      your_name = raw_input('Please type your name:')
+      if your_name == 'Matt':
+          print "Hi Matt!"
+      else:
+          print name
 
-  your_name = raw_input('Please type your name:')
-  if your_name == 'Matt':
-      print "Hi Matt!"
-  else:
-      print name
+  greeting()
 
-Run your program by typing this into a "console": ``python name.py``
+Run your program by typing this into a "terminal": ``python name.py``
 
 Credits
 =======
