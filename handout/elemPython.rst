@@ -269,7 +269,6 @@ Credits
 .. class:: right big
 
   | *Matt Harrison*
-  | matthewharrison@gmail.com
 
 .. class:: small
 
