@@ -1,1 +1,14 @@
+Elementary Python
+=================
+
+matt harrison (matthewharrison@gmail.com)
+
 Materials for teaching Python to 3-6 Graders.
+
+Handout
+-------
+
+Handout is in rst format.  There is a test (``test.py``) to run
+doctest against it.  Note that since it has examples of ``raw_input``
+you need to hit ctr-d a couple of times.
+
