@@ -8,18 +8,21 @@ Starting Python
 This is for Python version 2.  Windows users will need to install
 Python from www.python.org.  It is included in Mac and Linux computers.
 
-Type ``python`` into a "terminal".  
+Type ``python`` into a *terminal*.  
 (Windows -> run... -> cmd -> python)
 (Mac Applications -> Terminal -> python)
 
 
 .. class:: small
 
-  All the examples here contain an interpreter prompt (``>>>``).
+  All the examples here contain an *terminal* prompt (``>>>``).
   Don't type in the prompt.
 
 Variables
 =========
+
+*Variables* are chunks of memory the computer uses to store
+information.  *Variables* can have different *types*.
 
 Strings
 -------
@@ -79,7 +82,7 @@ Lists
 >>> names = [name, 'fred', 'george']
 >>> names.append('charles')
 
-``range`` can be used to create a list of numbers.
+``range`` can be used to create a *list* of numbers.
 
 >>> range(2, 10)  # numbers from 2 up to 10
 [2, 3, 4, 5, 6, 7, 8, 9]
@@ -87,8 +90,9 @@ Lists
 Comments
 --------
 
-Computers ignore comments.  But they are useful as reminders to
-humans.  Use ``#`` to start comments
+*comments* are used as reminders to programmers.  Computers ignore
+*comments*, but they are useful to humans.  Use ``#`` to start
+*comments*
 
 >>> grade = 4 # need to keep track of grade
 >>> # You can also have just a comment by itself
@@ -108,17 +112,18 @@ Input
 =====
 
 ``raw_input`` allows you to type data in.  Here it will be stored in
-``friend``.  You might need to convert your variable into a number,
-since the input is returned as a "string".
+``friend``.  You might need to convert your *variable* into a number,
+since the input is returned as a *string*.
 
 >>> friend = raw_input("Enter a friend's name")
+>>> age = int(raw_input("Enter a friend's age"))
 
 
 
 Functions
 =========
 
-Functions are reusable code chunks.
+*Functions* are reusable code chunks.
 
 >>> def add_5(number):
 ...     return number + 5
@@ -130,8 +135,8 @@ Functions are reusable code chunks.
 Whitespace
 ==========
 
-Python denotes *blocks* by indentation.  Note that in the function
-above, the line "return number + 5" was indented.  Blocks must:
+Python denotes *blocks* by indentation.  Note that in the *function*
+above, the line "return number + 5" was indented.  *Blocks* must:
 
   * Be indented consistently (4 spaces is ok)
   * Be preceeded by a ":"
@@ -196,12 +201,12 @@ allow that.
 2
 1
 
->>> for num in range(2, 0, -1):
+>>> for num in range(1, 3):
 ...     print num
-2
 1
+2
 
-Can `break` out of loops
+Can ``break`` out of loops
 
 >>> for num in range(100):
 ...     print num
@@ -213,7 +218,7 @@ Can `break` out of loops
 Importing Libraries
 ===================
 
-Libraries are collections of functions that are useful.
+*Libraries* are collections of *functions* that are useful.
 
 >>> import math
 >>> math.sin(1)
@@ -225,7 +230,7 @@ Getting Help
 
 ``dir`` and ``help`` or ``.__doc__`` are your friends
 
-``dir`` shows the "methods" (or functions) on objects that you can
+``dir`` shows the "methods" (or *functions*) on objects that you can
 call.
 
 >>> dir(math)
@@ -256,7 +261,7 @@ Type the following into a file named ``name.py`` using a "text editor"::
 
   greeting()
 
-Run your program by typing this into a "terminal": ``python name.py``
+Run your program by typing this into a *terminal*: ``python name.py``
 
 Credits
 =======
