@@ -1,11 +1,19 @@
 Computer Programming (with Python)
 ==================================
 
-.. class:: right big
+.. class:: crop
+
+  .. image:: img/snake.JPG
+
+.. class:: center huge white
+  
+  Computer Programming (with ``Python``)
+  
+.. class:: right big white
 
   | *Matt Harrison*
 
-.. class:: small
+.. class:: small white
 
    ©2010, licensed under a `Creative Commons
    Attribution/Share-Alike (BY-SA) license
@@ -58,6 +66,13 @@ Start IDLE
 .. class:: center huge
 
   What did *Hello World* really do?
+
+
+-------------
+
+.. code-block:: python
+
+  print "Hello World!"
 
 Do some math
 ------------
