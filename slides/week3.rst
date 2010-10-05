@@ -124,6 +124,19 @@ Python version
 
 .. code-block:: python
 
+  def add_4(input):
+      answer = input + 4
+      return answer
+
+or
+
+.. code-block:: python
+
+  def add_4(num):
+      return num + 4
+
+
+
 
 
 Calling functions
@@ -299,11 +312,40 @@ Write a function that:
 * subtracts 5 from that number
 * returns the result
 
+Extra Assignment
+-----------------
+
+Write a function that:
+
+* takes degrees Celsius (Metric)
+* returns degrees Fahrenheit (US)
+(C to F multiply by 9 divide by 5 add 32)
+
 ----------------------
 
 .. class:: center huge
 
   Conditions
+
+New data *type*
+-----------------
+
+.. class:: incremental
+
+  * int
+  * float
+  * string
+  * boolean
+
+*Boolean*
+-----------
+
+.. code-block:: python
+
+  a = True
+  b = False
+
+
 
 ----------------------
 
@@ -348,6 +390,106 @@ Syntax          Meaning
 ``==``          Equal to
 ``!=``          Not equal to
 =============== =============
+
+
+Conditionals evaluate to Booleans
+---------------------------------
+
+.. code-block:: python
+
+  >>> print 1 != 3
+  True
+  >>> print "matt" == "Fred"
+  False
+
+
+
+
+Examples
+---------
+
+.. code-block:: python
+
+  name = "matt"
+  if name == 'matt':
+      print "Cool!"
+
+  cash = 0.3
+  if cash < 1.0:
+      print "too bad"
+
+
+``elif``
+---------
+
+.. code-block:: python
+
+  grade = 80
+  letter = "F"
+  if grade > 90:
+      letter = "A"
+  elif grade > 80:
+      letter = "B"
+  elif grade > 70:
+      letter = "C"
+
+``elif``
+---------
+
+.. code-block:: python
+
+  grade = 80
+  letter = "F"
+  if grade > 90:
+      letter = "A"
+  elif grade > 80:
+      letter = "B"
+  elif grade > 70:
+      letter = "C"
+grade = ? (note the indentation)
+
+
+``else``
+---------
+
+.. code-block:: python
+
+  name = 'matt'
+  if name == "matt":
+      print "same"
+  else:
+      print "different"
+
+function with ``if``
+---------------------
+
+.. class:: normal
+
+  .. code-block:: python
+
+    def is_matt(name):
+        result = False
+        if name == "matt":
+            result = True
+        elif name == "Matt":
+            result = True
+        else:
+            result = False
+        return result
+
+
+
+Assignment
+-----------
+
+Write a function that:
+
+* takes a number
+* returns:
+
+  * ``"G"`` if greater than 1000000000
+  * ``"M"`` if greater than 1000000
+  * ``"K"`` if greater than 1000
 
 
 
